@@ -7,7 +7,8 @@ export default class HomeScreen extends Component {
       <View
         style={{
           flex: 1,
-          backgroundColor: "#b0cac7",
+          backgroundColor: "#efefef",
+          // backgroundColor: "#b0cac7",
           justifyContent: "center",
           alignContent: "center",
           alignItems: "center",
@@ -66,11 +67,17 @@ export default class HomeScreen extends Component {
 const styles = StyleSheet.create({
   buttons: {
     backgroundColor: "#005086",
-    margin: 40,
+    margin: 4,
     padding: 10,
-    borderRadius: 8,
+    borderRadius: 2,
+    width: 120,
+    height: 120,
+    justifyContent: "center",
+    alignItems: "center",
   },
   buttonText: {
     color: "white",
+    fontWeight: "bold",
+    fontSize: 20,
   },
 });

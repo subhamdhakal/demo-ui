@@ -10,17 +10,12 @@ export default class ScreenChooseMaterial extends Component {
           justifyContent: "center",
           alignContent: "center",
           alignItems: "center",
-          backgroundColor: "#b0cac7",
+          // backgroundColor: "#b0cac7",
+          backgroundColor: "#efefef",
         }}
       >
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 150,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() =>
             this.props.navigation.navigate("ScreenChooseThickness")
           }
@@ -28,13 +23,7 @@ export default class ScreenChooseMaterial extends Component {
           <Text style={{ color: "white" }}>Aluminium</Text>
         </TouchableHighlight>
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 150,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() =>
             this.props.navigation.navigate("ScreenChooseThickness")
           }
@@ -42,13 +31,7 @@ export default class ScreenChooseMaterial extends Component {
           <Text style={{ color: "white" }}>Stainless Steel</Text>
         </TouchableHighlight>
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 150,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() =>
             this.props.navigation.navigate("ScreenChooseThickness")
           }
@@ -61,12 +44,16 @@ export default class ScreenChooseMaterial extends Component {
 }
 const styles = StyleSheet.create({
   buttons: {
-    backgroundColor: "#318fb5",
-    margin: 40,
-    padding: 10,
-    borderRadius: 8,
+    backgroundColor: "#005086",
+    borderRadius: 4,
+    width: 250,
+    marginBottom: 5,
+    paddingVertical: 15,
+    justifyContent: "center",
+    alignItems: "center",
   },
   buttonText: {
     color: "white",
+    fontSize: 16,
   },
 });

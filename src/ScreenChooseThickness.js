@@ -10,56 +10,33 @@ export default class ScreenChooseThickness extends Component {
           justifyContent: "center",
           alignContent: "center",
           alignItems: "center",
-          backgroundColor: "#b0cac7",
+          // backgroundColor: "#b0cac7",
+          backgroundColor: "#efefef",
         }}
       >
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 200,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() => this.props.navigation.navigate("DetailScreen")}
         >
-          <Text style={{ color: "white" }}>1/2" and Up (12.7 mm) </Text>
+          <Text style={styles.buttonText}>1/2" and Up (12.7 mm) </Text>
         </TouchableHighlight>
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 200,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() => this.props.navigation.navigate("DetailScreen")}
         >
-          <Text style={{ color: "white" }}>1/4" (6.4 mm)</Text>
+          <Text style={styles.buttonText}>1/4" (6.4 mm)</Text>
         </TouchableHighlight>
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 200,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() => this.props.navigation.navigate("DetailScreen")}
         >
-          <Text style={{ color: "white" }}>1/8" (3.2 mm)</Text>
+          <Text style={styles.buttonText}>1/8" (3.2 mm)</Text>
         </TouchableHighlight>
         <TouchableHighlight
-          style={{
-            backgroundColor: "#005086",
-            padding: 8,
-            borderRadius: 8,
-            width: 200,
-            margin: 10,
-          }}
+          style={styles.buttons}
           onPress={() => this.props.navigation.navigate("DetailScreen")}
         >
-          <Text style={{ color: "white" }}>3/16" (4.8 mm)</Text>
+          <Text style={styles.buttonText}>3/16" (4.8 mm)</Text>
         </TouchableHighlight>
       </View>
     );
@@ -67,12 +44,16 @@ export default class ScreenChooseThickness extends Component {
 }
 const styles = StyleSheet.create({
   buttons: {
-    backgroundColor: "#318fb5",
-    margin: 40,
-    padding: 10,
-    borderRadius: 8,
+    backgroundColor: "#005086",
+    borderRadius: 4,
+    width: 250,
+    marginBottom: 5,
+    paddingVertical: 15,
+    justifyContent: "center",
+    alignItems: "center",
   },
   buttonText: {
     color: "white",
+    fontSize: 16,
   },
 });

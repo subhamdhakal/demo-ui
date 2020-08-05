@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import HomeScreen from "../demo-app/src/HomeScreen";
+import HomeScreen from "./src/HomeScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import Icons from "react-native-vector-icons/FontAwesome";
 import FacebookScreen from "./src/FacebookScreen";
