@@ -17,8 +17,6 @@ export default class HomeScreen extends Component {
         <View
           style={{
             justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "row",
           }}
         >
           <View>
